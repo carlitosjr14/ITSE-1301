@@ -1,0 +1,35 @@
+
+header{
+    overflow: hidden;
+    background-color: #618685;
+}
+
+nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 17px;   
+    
+}
+nav a.active{
+    background-color: #36486b;
+    color: white;
+}
+
+body{
+    background-color: #fefbd8;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #3e4444;
+}
+
+footer{
+    width:auto;
+    height: auto;
+    text-align: center;
+    background-color: #618685;
+    color: aliceblue;
+}
