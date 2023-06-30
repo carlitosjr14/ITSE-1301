@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            a:link{color:white;}
+            a:visited{color:#000060;}
+            a:hover{background-color: #4040a1;
+            color: white;}
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><strong>Home Page</strong></a> 
+                <a href="blog.html"><strong>David Spade Blog</strong></a> 
+                <a class="active" href="contact-us.html"><strong>Contact Us</strong></a>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Fill The Form Below</h1>
+            <section>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <form id="myMailerForm" action="mailto:test@email.edu" method="post">
+                        <p>
+                            <label for="fullname">Full Name</label> <input type="text" name="Fullname" id="fullname">
+                        </p>
+                        <p>
+                            <label for="email">E-Mail</label> <input type="email" name="Email" id="email">
+                        </p>
+                        <h2>Message Type</h2>
+                        <p>
+                            <label for="questionButton">Question</label> <input type="radio" name="request" id="questionButton">
+                            <br>
+                            <label for="commenButton">Comment</label> <input type="radio" name="request" id="commenButton">
+                        </p>
+                        <p>
+                            <label for="selectIssue">Issue Type:<br>
+                                <select name="Issue" id="selectIssue" size="1">
+                                    <option value="" selected>Choose Here ></option>
+                                    <option value="1">Software</option>
+                                    <option value="2">Hardware</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="message">Message</label>
+                            <br>
+                            <textarea name="Message" id="message">Type Here</textarea>
+                        </p>
+                        <p>
+                            <label for="replyEmail">Approve Reply</label> <input type="checkbox" name="Receive Reply" id="replyEmail">
+                        </p>
+                        <p>
+                            <input type="reset" value="Erase Me">
+                            <input type="submit" value="Send">
+                        </p>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Author: Carlos Flores</strong></p>
+                <p><a href="https://www.dallascollege.edu/pages/default.aspx"><strong> Dallas College Website</strong></a></p>
+                <p><a href="mailto:email@email.com"><strong>Email the Webmaster</strong></a></p>
+                <p><strong>Last updated: <time datetime="2023-06-27 11:42">06/27/2023</time></strong></p>
+        </footer>
+    </body>
+</html>
