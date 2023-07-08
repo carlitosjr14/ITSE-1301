@@ -1,0 +1,31 @@
+article {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin: 25px;
+    padding: 15px;
+    border-color: #092834;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 15px;
+    clear: both;
+
+}
+figure{
+    height: 50%;
+    width: 7%;
+    float: left;
+}
+figcaption{
+    text-align: left;
+    font-size: small;
+    clear: both;
+}
+p{ 
+    height: 100%;
+    width: 100%;
+}
+table{
+    margin: 25px;
+}
