@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">    
     <link rel="stylesheet" href="css/nav-menu.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         a:link{color:white;}
         a:visited{color:white;}
@@ -42,13 +46,14 @@
 </head>
 
 <body>
+    <div class="w3-container">
     <main>
         <header>
-            <nav class="topnav">
-                <a class="active" href="index.html"><strong>Home Page</strong></a> 
-                <a href="blog.html"><strong>David Spade Blog</strong></a> 
-                <a href="contact-us.html"><strong>Contact Us</strong></a>
-            </nav>
+            <div class="topnav w3-bar w3-broder w3-large">
+                <a class="active w3-bar-item w3-button" href="index.html"><i class="fa fa-home"></i> Home</a> 
+                <a class="w3-bar-item w3-button" href="blog.html"><i class="fa fa-user"></i> David Spade</a> 
+                <a class="w3-bar-item w3-button" href="contact-us.html"><i class="fa fa-address-book"></i> Contact Us</a>
+            </div>
         </header>
         <h1>Carlos Flores</h1>  
         <img src="images/tools.png" alt="Screwdriver and Wrench positioned in an X position" width="75" height="75">
@@ -61,20 +66,23 @@
         <h2>Interests</h2>  
         <p>Media influenced my childhood a lot while growing up. Movies like The Fast and The Furious franchise, the various Pokemon movies, and countless superhero action films were on constant rotation in my household. These movies and many like them continue to consume my time due to the exposure I received as a child.</p>
         <p>Video Games filled my time spent alone as a child due to my parents working a lot. After schol I would be the first to be home all I ever did was play video games like Fifa and WWE. My favorite video games growing up consisted of:</p>
-        <aside>
-            <figure>
-                <img src="images/playstation_controller.jpg" alt="Image display Playstation 2 Controller" height="150" width="200">
-                <figcaption>Playstation 2 Controller</figcaption>
-            </figure>  
-        </aside>
-        <ul>
+
+        <ul class="w3-ul w3-card-4" style="width: 50%">
             <li>The Jack and Daxter Series</li>
             <li>Need for Speed Underground 1 and 2</li>
             <li>FIFA 2008-2014</li>
             <li>Pro Soccer Evolution 2007</li>
             <li>Little Big Planet 2</li>
             <li>Call of Duty Modern Warfare 3</li>
-        </ul> 
+        </ul>
+        <p>&nbsp;</p>
+
+        <div class="w3-card-4" style="width:15%">
+            <img src="images/playstation_controller.jpg" alt="Image display Playstation 2 Controller" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Playstation 2 Controller</p>
+            </div>
+        </div>
     </section>
     
     <section>
@@ -95,5 +103,6 @@
             <p><a href="mailto:email@email.com"><strong>Email the Webmaster</strong></a></p>
             <p><strong>Last updated: <time datetime="2023-07-02 09:15">07/02/2023</time></strong></p>
     </footer>
+    </div>
 </body>
 </html>

@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/nav-menu.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         <link rel="apple-touch-icon" sizes="57x57" href="images/tools-icons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/tools-icons/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/tools-icons/apple-icon-72x72.png">
@@ -48,13 +53,15 @@
     </head>
 
     <body>
+        <div class="w3-container">
+
         <main>
             <header>
-                <nav class="topnav">
-                    <a href="index.html"><strong>Home Page</strong></a> 
-                    <a class="active" href="blog.html"><strong>David Spade Blog</strong></a>
-                    <a href="contact-us.html"><strong>Contact Us</strong></a>
-                </nav>
+                <div class="topnav w3-bar w3-broder w3-large">
+                    <a class="w3-bar-item w3-button" href="index.html"><i class="fa fa-home"></i> Home</a> 
+                    <a class="active w3-bar-item w3-button" href="blog.html"><i class="fa fa-user"></i> David Spade</a> 
+                    <a class="w3-bar-item w3-button" href="contact-us.html"><i class="fa fa-address-book"></i> Contact Us</a>
+                </div>
             </header>
             <h1>David Spades Blog</h1>
         </main>
@@ -62,38 +69,38 @@
             <h2>Background</h2>
             <article>
                 <h3>Introduction</h3>
-                    <figure>
+                    <figure class="w3-card-4 w3-center" style="width: 100px">
                         <a href="images/davidspade_redBackground-lg.jpg"><img src="images/davidspade_redBackground-thumb.jpg" alt="David Spade Infront of Red Background"></a>
-                        <figcaption>David Spade posing</figcaption>
+                        <figcaption class="w3-container w3-center">David Spade posing</figcaption>
                     </figure>
-                <p>David Spade is an American actor, comedian, producer, and writer born on July 22, 1964, in Birmingham, Michigan. After completing high school Spade attended and later on dropped out of college to pursue a stand-up career. After moving to Los Angeles, he gained exposure and began performing at comedy tours and nightclubs.    
+                    <p>David Spade is an American actor, comedian, producer, and writer born on July 22, 1964, in Birmingham, Michigan. After completing high school Spade attended and later on dropped out of college to pursue a stand-up career. After moving to Los Angeles, he gained exposure and began performing at comedy tours and nightclubs.    
                 </p>
                 <p>Spade's popularity rose as he was later brought on to Saturday Night Live(SNL) skit show. Spade was beloved due to his dry and sarcastic sense of humor while at SNL. He remained at SNL from 1990-96 and began pursuing more acting in the later half of the 90's. </p>
             </article>
             <article>
                 <h3>Impactful Roles</h3>
-                    <figure>
+                    <figure class="w3-card-4 w3-center" style="width: 100px">
                         <a href="images/davidspade_SNL-lg.jpg"><img src="images/davidspade_SNL-thumb.jpg" alt="David Spade in the SNL Skit show"></a>
-                        <figcaption>David Spade in the SNL show</figcaption>
+                        <figcaption class="w3-container w3-center">David Spade in the SNL show</figcaption>
                     </figure>
                 <p>David Spade is known very well for the humor that he brings to the characters that he portrays. Spade's most well-known acting roles are in the films Tommy Boy, Joe Dirt, and the TV series "Just Shoot Me!". He is recognized for the dry humor that he displays on the screen and has created memorable characters like Joe Dirt.</p>
                 <p>David Spade is a prolific voice actor lending his voice to countless shows and movies targeted toward a younger audience. He began voice acting very early on in his career with credits in the TV show Bevis and Butt-Head. Spade found great success later on by taking part in the highly successful Hotel Transylvania franchise.</p>
             </article>
             <article>
                 <h3>Recent Work</h3>
-                    <figure>
+                    <figure class="w3-card-4 w3-center" style="width: 100px">
                         <a href="images/griffin-lg.jpg"><img src="images/griffin-thumb.jpg" alt="Fictional character voiced by David Spade"></a>
-                        <figcaption>Fictional character "Griffin" voiced by David Spade</figcaption>
+                        <figcaption class="w3-container w3-center">Fictional character "Griffin" voiced by David Spade</figcaption>
                     </figure>
                 <p>David Spade remains a very popular actor with a long career under his belt. He can still be seen performing in films and TV as well as hearing in animated films through his voice-acting performances. Spade's consistency in performing has placed him on a small list of outstanding performers. </p>
                 <p>Spade can also be seen appearing as a guest in many popular podcasts like 2 Bears 1 Cave, Hotboxin' with Myke Tyson, and Tigerbelly. Spade also has his podcast that posts weekly called Fly on the Wall that he hosts with his friend Dana Carvey. David Spade also performs stand-up with a special out on Netflix.</p>
             </article>
         </section>
-
-        <table>
-            <Caption> Notable Works</Caption>
+        <section>
+            <h2 class="w3-center">Notable Works</h2>
+        <table class="w3-table-all w3-card-4">
             <thead>
-                <tr>
+                <tr class="w3-dark-grey">
                     <th colspan="3"> Acting Roles</th>
                 </tr>    
                 <tr>
@@ -125,12 +132,14 @@
                 </tr>
             </tbody>
         </table>
+        </section>
         <footer>
             <p><strong>Author: Carlos Flores</strong></p>
             <p><a href="https://www.dallascollege.edu/pages/default.aspx"><strong> Dallas College Website</strong></a></p>
             <p><a href="mailto:email@email.com"><strong>Email the Webmaster</strong></a></p>
             <p><strong>Last updated: <time datetime="2023-07-02 09:15">07/02/2023</time></strong></p> 
         </footer>
+        </div>
     </body>
 
 </html>

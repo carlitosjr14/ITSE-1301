@@ -6,6 +6,11 @@
         <title>Contact Us</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/nav-menu.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         <link rel="apple-touch-icon" sizes="57x57" href="images/tools-icons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/tools-icons/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/tools-icons/apple-icon-72x72.png">
@@ -28,16 +33,19 @@
             a:visited{color: white;}
             a:hover{background-color: #4040a1;
             color: white;}
+            h2{color:black}
         </style>
     </head>
 
     <body>
+        <div class="w3-container">
+
         <header>
-            <nav class="topnav">
-                <a href="index.html"><strong>Home Page</strong></a> 
-                <a href="blog.html"><strong>David Spade Blog</strong></a> 
-                <a class="active" href="contact-us.html"><strong>Contact Us</strong></a>
-            </nav>
+            <div class="topnav w3-bar w3-broder w3-large">
+                <a class="w3-bar-item w3-button" href="index.html"><i class="fa fa-home"></i> Home</a> 
+                <a class="w3-bar-item w3-button" href="blog.html"><i class="fa fa-user"></i> David Spade</a> 
+                <a class="active w3-bar-item w3-button" href="contact-us.html"><i class="fa fa-address-book"></i> Contact Us</a>
+            </div>
         </header>
         
         <main>
@@ -47,20 +55,20 @@
                     <legend>Contact Us</legend>
                     <form id="myMailerForm" action="mailto:test@email.edu" method="post">
                         <p>
-                            <label for="fullname">Full Name</label> <input type="text" name="Fullname" id="fullname">
+                            <label for="fullname">Full Name</label> <input class="w3-input w3-border w3-round" style="width: 25%" type="text" name="Fullname" id="fullname">
                         </p>
                         <p>
-                            <label for="email">E-Mail</label> <input type="email" name="Email" id="email">
+                            <label for="email">E-Mail</label> <input class="w3-input w3-border w3-round" style="width: 25%" type="email" name="Email" id="email">
                         </p>
-                        <h2>Message Type</h2>
+                        <h2>Message Type:</h2>
                         <p>
-                            <label for="questionButton">Question</label> <input type="radio" name="request" id="questionButton">
+                            <label for="questionButton">Question</label> <input class="w3-radio" type="radio" name="request" id="questionButton">
                             <br>
-                            <label for="commenButton">Comment</label> <input type="radio" name="request" id="commenButton">
+                            <label for="commenButton">Comment</label> <input class="w3-radio" type="radio" name="request" id="commenButton">
                         </p>
                         <p>
                             <label for="selectIssue">Issue Type:<br>
-                                <select name="Issue" id="selectIssue" size="1">
+                                <select class="w3-input w3-border w3-round" style="width: 20%" name="Issue" id="selectIssue" size="1">
                                     <option value="" selected>Choose Here ></option>
                                     <option value="1">Software</option>
                                     <option value="2">Hardware</option>
@@ -71,14 +79,14 @@
                         <p>
                             <label for="message">Message</label>
                             <br>
-                            <textarea name="Message" id="message">Type Here</textarea>
+                            <textarea class="w3-input w3-border w3-round" style="width: 50%" name="Message" id="message">Type Here</textarea>
                         </p>
                         <p>
-                            <label for="replyEmail">Approve Reply</label> <input type="checkbox" name="Receive Reply" id="replyEmail">
+                            <label for="replyEmail">Approve Reply</label> <input class="w3-check" type="checkbox" name="Receive Reply" id="replyEmail">
                         </p>
                         <p>
-                            <input type="reset" value="Erase Me">
-                            <input type="submit" value="Send">
+                            <input class="w3-button w3-round-large w3-dark-grey" type="reset" value="Erase Me">
+                            <input class="w3-button w3-round-large w3-dark-grey" type="submit" value="Send">
                         </p>
                     </form>
                 </fieldset>
@@ -91,5 +99,6 @@
                 <p><a href="mailto:email@email.com"><strong>Email the Webmaster</strong></a></p>
                 <p><strong>Last updated: <time datetime="2023-07-02 09:15">07/02/2023</time></strong></p>
         </footer>
+        </div>
     </body>
 </html>
